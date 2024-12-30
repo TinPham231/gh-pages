@@ -1,0 +1,181 @@
+<!DOCTYPE html><html lang="vi"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>OOP Trong Javascript Có Gì Khác Với Ngôn Ngữ Khác? - Tin&#x27;s Blog</title><meta name="description" content="Trước khi đọc bài viết này, bạn nên ôn lại kiến thức về object và prototype trong Javacript. Trước khi phân tích về OOP trong JavaScript, mình sẽ nhắc lại sơ 1 số tính chất trong OOP. Trong lập trình hướng đối tượng (OOP) có 4 tính chất là tính đóng gói&hellip;"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://tinpham231.github.io/gh-pages/oop-trong-javascript-co-gi-khac-voi-ngon-ngu-khac.html"><link rel="alternate" type="application/atom+xml" href="https://tinpham231.github.io/gh-pages/feed.xml"><link rel="alternate" type="application/json" href="https://tinpham231.github.io/gh-pages/feed.json"><meta property="og:title" content="OOP Trong Javascript Có Gì Khác Với Ngôn Ngữ Khác?"><meta property="og:image" content="https://tinpham231.github.io/gh-pages/media/posts/11/oop-trong-javascript-63734807042.6106.jpg"><meta property="og:image:width" content="817"><meta property="og:image:height" content="460"><meta property="og:site_name" content="Tin's Blog"><meta property="og:description" content="Trước khi đọc bài viết này, bạn nên ôn lại kiến thức về object và prototype trong Javacript. Trước khi phân tích về OOP trong JavaScript, mình sẽ nhắc lại sơ 1 số tính chất trong OOP. Trong lập trình hướng đối tượng (OOP) có 4 tính chất là tính đóng gói&hellip;"><meta property="og:url" content="https://tinpham231.github.io/gh-pages/oop-trong-javascript-co-gi-khac-voi-ngon-ngu-khac.html"><meta property="og:type" content="article"><link rel="stylesheet" href="https://tinpham231.github.io/gh-pages/assets/css/style.css?v=a04af01030a64425bd5b3d490e311759"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://tinpham231.github.io/gh-pages/oop-trong-javascript-co-gi-khac-voi-ngon-ngu-khac.html"},"headline":"OOP Trong Javascript Có Gì Khác Với Ngôn Ngữ Khác?","datePublished":"2024-12-31T00:31+07:00","dateModified":"2024-12-31T00:31+07:00","image":{"@type":"ImageObject","url":"https://tinpham231.github.io/gh-pages/media/posts/11/oop-trong-javascript-63734807042.6106.jpg","height":460,"width":817},"description":"Trước khi đọc bài viết này, bạn nên ôn lại kiến thức về object và prototype trong Javacript. Trước khi phân tích về OOP trong JavaScript, mình sẽ nhắc lại sơ 1 số tính chất trong OOP. Trong lập trình hướng đối tượng (OOP) có 4 tính chất là tính đóng gói&hellip;","author":{"@type":"Person","name":"Pham Ba Tin","url":"https://tinpham231.github.io/gh-pages/authors/pham-ba-tin/"},"publisher":{"@type":"Organization","name":"Pham Ba Tin"}}</script><style>.u-tag--java{--badge-bg:#84888E;--badge-txt:#FFFFFF;}.u-tag--javascript{--badge-bg:#84888E;--badge-txt:#FFFFFF;}</style><noscript><style>img[loading]{opacity:1;}</style></noscript></head><body class="post-template"><header class="topbar" id="js-header"><div class="topbar__inner"><a class="logo" href="https://tinpham231.github.io/gh-pages/">Tin&#x27;s Blog</a><nav class="navbar"><button class="navbar__toggle" aria-label="Menu" aria-haspopup="true" aria-expanded="false"><span class="navbar__toggle-box"><span class="navbar__toggle-inner">Menu</span></span></button><ul class="navbar__menu"><li><a href="https://tinpham231.github.io/gh-pages/" target="_self">Home</a></li><li><a href="https://tinpham231.github.io/gh-pages/authors/pham-ba-tin/" target="_self">Blog</a></li><li><a href="https://tinpham231.github.io/gh-pages/my-profile.html" target="_self">Profile</a></li></ul></nav></div></header><div class="main-content"><div class="infobar"><div class="infobar__update">Last Updated: <time datetime="2024-12-31T01:36">tháng 12 31, 2024</time></div></div><main class="main post"><article class="content"><figure class="content__featured-image"><img src="https://tinpham231.github.io/gh-pages/media/posts/11/oop-trong-javascript-63734807042.6106.jpg" srcset="https://tinpham231.github.io/gh-pages/media/posts/11/responsive/oop-trong-javascript-63734807042.6106-xs.jpg 300w, https://tinpham231.github.io/gh-pages/media/posts/11/responsive/oop-trong-javascript-63734807042.6106-sm.jpg 480w, https://tinpham231.github.io/gh-pages/media/posts/11/responsive/oop-trong-javascript-63734807042.6106-md.jpg 768w, https://tinpham231.github.io/gh-pages/media/posts/11/responsive/oop-trong-javascript-63734807042.6106-lg.jpg 1024w, https://tinpham231.github.io/gh-pages/media/posts/11/responsive/oop-trong-javascript-63734807042.6106-xl.jpg 1360w, https://tinpham231.github.io/gh-pages/media/posts/11/responsive/oop-trong-javascript-63734807042.6106-2xl.jpg 1600w" sizes="(max-width: 1600px) 100vw, 1600px" loading="eager" height="460" width="817" alt=""></figure><header class="u-header content__header"><h1>OOP Trong Javascript Có Gì Khác Với Ngôn Ngữ Khác?</h1><div class="u-header__meta u-small"><div><a href="https://tinpham231.github.io/gh-pages/authors/pham-ba-tin/" title="Pham Ba Tin">Pham Ba Tin</a> <a href="https://tinpham231.github.io/gh-pages/tags/javascript/" class="u-tag u-tag--javascript">JavaScript</a></div></div></header><div class="content__entry u-inner"><p><strong>Trước khi đọc bài viết này, bạn nên ôn lại kiến thức về <a href="https://codelearn.io/sharing/object-trong-javascript" target="_blank" rel="noopener">object</a> và <a href="https://codelearn.io/sharing/prototype-trong-javascript" target="_blank" rel="noopener">prototype</a> trong Javacript. Trước khi phân tích về OOP trong JavaScript, mình sẽ nhắc lại sơ 1 số tính chất trong OOP.</strong></p><h3>Các tính chất của OOP</h3><p><img loading="lazy" src="https://s3-sgn09.fptcloud.com/codelearnstorage/Media/Default/Users/Khoaa/Image/object-oriented-programming-features.png" data-is-external-image="true"></p><p>Trong lập trình hướng đối tượng (OOP) có 4 tính chất là tính đóng gói (<em>Encapsulation</em>), tính kế thừa (<em>Inheritance</em>), tính đa hình (<em>Polymorphism</em>) và tính trừu tượng (<em>Abstraction</em>)</p><h3>1. <strong>Encapsulation (Tính đóng gói):</strong></h3><p>Tính đóng là kỹ thuật giúp bạn che giấu được những thông tin bên trong đối tượng. Mục đích chính của tính đóng gói là giúp hạn chế các lỗi khi phát triển chương trình. Tính chất này không cho phép người sử dụng các đối tượng thay đổi trạng thái nội tại của một đối tượng. Chỉ có các phương thức nội tại của đối tượng cho phép thay đổi trạng thái của nó. Việc cho phép môi trường bên ngoài tác động lên các dữ liệu nội tại của một đối tượng theo cách nào là hoàn toàn tùy thuộc vào người viết mã. Đây là tính chất đảm bảo sự toàn vẹn của đối tượng.</p><p>Các lợi ích chính mà tính đóng gói mang lại:</p><ul><li>Hạn chế được các truy xuất không hợp lệ tới các thuộc tính của đối tượng.</li><li>Giúp cho trạng thái của đối tượng luôn đúng.</li><li>Giúp ẩn đi những thông tin không cần thiết về đối tượng.</li><li>Cho phép bạn thay đổi cấu trúc bên trong lớp mà không ảnh hưởng tới lớp khác. </li></ul><h3><strong>2. Inheritance(Tính kế thừa):</strong></h3><p>Kế thừa trong lập trình hướng đối tượng chính là thừa hưởng lại những thuộc tính và phương thức của một lớp. Có nghĩa là nếu lớp A kế thừa lớp B thì lớp A sẽ có những thuộc tính và phương thức của lớp B. Lớp được thừa hưởng những thuộc tính và phương thức từ lớp khác được gọi là dẫn xuất (<em>Derived Class</em>) hay lớp Con (<em>Subclass</em>) và lớp bị lớp khác kế thừa được gọi là lớp cơ sở (<em>Base Class</em>) hoặc lớp cha (<em>Parent Class</em>). </p><p>Các lợi ích của tính kế thừa:</p><ul><li>Giúp tái sử dụng lại code.</li><li>Tăng khả năng mở rộng của chương trình.</li></ul><h3><strong>3. Polymorphism(Tính đa hình):</strong></h3><p>Tính đa hình thể hiện thông qua việc gửi các thông điệp (message). Việc gửi các thông điệp này có thể so sánh như việc gọi các hàm bên trong của một đối tượng. Các phương thức dùng trả lời cho một thông điệp sẽ tùy theo đối tượng mà thông điệp đó được gửi tới sẽ có phản ứng khác nhau. Người lập trình có thể định nghĩa một đặc tính (chẳng hạn thông qua tên của các phương thức) cho một loạt các đối tượng gần nhau nhưng khi thi hành thì dùng cùng một tên gọi mà sự thi hành của mỗi đối tượng sẽ tự động xảy ra tương ứng theo đặc tính của từng đối tượng mà không bị nhầm lẫn.</p><h3><strong>4. Abstraction(Tính trừu tượng):</strong></h3><p>Tính trừu tượng là một tính chất mà chỉ tập trung vào những tính năng của đối tượng và ẩn đi những thông tin không cần thiết. Tính chất này giúp bạn trọng tâm hơn vào những tính năng thay vì phải quan tâm tới cách mà nó được thực hiện. </p><p><strong>Trong phạm vi bài viết này, chúng ta sẽ bàn về 3 đặc tính của OOP (tính đóng gói, tính kế thừa, tính đa hình), so sánh cách hiện thực chúng trong Java và JavaScript.</strong></p><h3><strong>OOP trong Java</strong></h3><p>Như các bạn đã biết, <strong>Java</strong> là một ngôn ngữ hướng đối tượng, do đó việc hiện thực các đặc tính <strong>OOP</strong> rất đơn giản và nhanh gọn, dễ hiểu.</p><h3><strong>1. Tính đóng gói</strong></h3><p>Tính bao đóng trong <strong>Java</strong> thể hiện bằng cách để phạm vi truy cập của các thuộc tính là <code>private</code> và truy xuất tới các thuộc tính này thông qua phương thức <code>public</code> (gọi là các <code>setter</code>, <code>getter</code>).</p><p><strong>Ví dụ:</strong></p><pre class="language-javascript"><code>class Student {
+   private String name;
+   private int age;
+   private double gpa;
+
+   public String getName() {
+      return name;
+   }
+
+   public void setName(String name) {
+      this.name = name;
+   }
+
+   public int getAge() {
+      return age;
+   }
+
+   public void setAge(int age) {
+      this.age = age;
+   }
+
+   public double getGpa() {
+      return gpa;
+   }
+
+   public void setGpa(double gpa) {
+      this.gpa = gpa;
+   }
+
+}</code></pre><p>Với cách làm này thông tin của đối tượng đã được ẩn đi, bạn chỉ có thể giao tiếp với đối tượng thông qua các phương thức. Điều này cũng giống với thực tế. Ví dụ khi bạn gặp một người lạ thì bạn không thể biết được các thuộc tính của người này (số điện thoại, sở thích, ...), kể cả khi bạn hỏi thì người này cũng chưa chắc đã trả lời cho bạn đúng sự thật (giống như phương thức không trả về giá trị thực thuộc tính mà trả về một giá trị khác).</p><h3><strong>2. Tính kế thừa</strong></h3><p>Trong <strong>Java</strong>, để kế thừa một lớp bạn dùng từ khóa <code>extends</code>.</p><p><strong>Ví dụ:</strong></p><pre class="language-java" tabindex="0"><code>class Person {
+   private String name;
+   private int age;
+
+   public void setName(String name) {
+      this.name = name;
+   }
+
+   public String getName() {
+      return name;
+   }
+
+   public void setAge(int age) {
+      this.age = age;
+   }
+
+   public int getAge() {
+      return age;
+   }
+}
+
+class Student extends Person {
+   private double gpa;
+   
+   public void setGpa(double gpa) {
+      this.gpa = gpa;
+   }
+
+   public double getAge() {
+      return gpa;
+   }
+}
+
+class Entry {
+   public static void main(String[] args) {
+      Student s = new Student();
+      s.setName("Khoa");
+      s.setAge(19);
+      s.setGpa(10); 
+      System.out.println("Name: " + s.getName());
+      System.out.println("Age: " + s.getAge());
+      System.out.println("GPA: " + s.getGpa());
+   }
+}</code></pre><p>Kết quả khi chạy chương trình:</p><pre class="language-markup" tabindex="0"><code>Name: Khoa
+Age: 19
+GPA: 10.0</code></pre><p>Có thể thấy rằng lớp <code>Student</code> đã được thừa hưởng những phương thức của lớp <code>Person</code>.</p><h3><strong>3. Tính đa hình</strong></h3><p>Tính đa hình trong code dưới 3 hình thức: nạp chồng phương thức, ghi đè phương thức và đa hình thông qua các đối tượng đa hình(polymorphic objects).</p><p><strong>Ví dụ về tính đa hình với nạp chồng phương thức: </strong>Phương thức cộng sẽ có các "forms" là cộng 2 số nguyên, cộng 2 số thực, cộng 3 số nguyên, v.v.. Có thể thấy cùng là phương thức cộng nhưng lại có nhiểu kiểu khác nhau nên đây chính là biểu hiện của tính đa hình.</p><pre class="language-javascript"><code>package OOP;
+
+class Calculator {
+   public int add(int a, int b) {
+      return a + b;
+   }
+
+   public double add(double a, double b) {
+      return a + b;
+   }
+
+   public int add(int a, int b, int c) {
+      return a + b + c;
+   }
+}
+
+public class Entry {
+   public static void main(String[] args) {
+      Calculator s = new Calculator();
+      System.out.println(s.add(1, 2));
+      System.out.println(s.add(2.1, 2.4));
+      System.out.println(s.add(1, 2, 3));
+   }
+}</code></pre><p>Kết quả khi chạy chương trình:</p><pre class="language-markup" tabindex="0"><code>3
+4.5
+6</code></pre><h3><strong>OOP trong Javascript</strong></h3><p><strong>Javascript</strong> thì khác, không như Java, chúng ta cần phải áp dụng một vài thủ thuật để thực hiện các đặc tính này.</p><h3>1. Tính đóng gói</h3><p>Trong <strong>Javascript</strong>, để thực hiện tính bao đóng, ta có thể tạo ra 1 <em>Constructor Function</em>, đóng gói toàn bộ các trường và hàm vào 1 object. Thông thường, các bạn hay khai báo như sau:</p><pre class="language-javascript"><code>function Person(firstName, lastName) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.showName = function() {
+     console.log(this.firstName + ' ' + this.lastName);
+  };
+}
+
+var psn1 = new Person('Khoa', 'Nguyen');
+
+// các property khai báo vào biến this có thể bị truy xuất từ bên ngoài
+// object không còn bao đóng nữa
+psn1.firstName = 'changed';
+console.log(ps1.firstName); // changed</code></pre><p>Với các khai báo này, tính bao đóng không được đảm bảo. Các property có thể bị truy cập, thay đổi từ bên ngoài. Ở đây, ta phải <strong>sử dụng biến cục bộ</strong>.</p><pre class="language-javascript"><code>function Person(firstName, lastName) {
+  var fstName = firstName;
+  var lstName = lastName;
+  
+  this.setFirstName = function(firstName) { 
+      fstName = firstName; 
+  };
+
+  this.getFirstName = function() {
+      return fstName; 
+  };
+  
+  this.setLastName = function(lastName) { 
+      lstName = lastName; 
+  };
+
+  this.getLastName = function() { 
+      return lstName; 
+  };
+}
+
+var person1 = new Person('Khoa', 'Nguyen');
+console.log(person1.fstName); // Undefined, không thể truy cập được
+
+
+console.log(person1.getFirstName()); // Khoa</code></pre><p>Các <strong>biến cục bộ</strong> này chỉ có thể truy xuất trong <em>Constructor Function</em>, nó tương đương với các trường <code>private</code> trong Java.</p><p>Trong <strong>javascript</strong>, không có cách nào để tạo ra các trường <code>protected</code> (Chỉ có thể truy cập từ class kế thừa) như <strong>Java</strong> và <strong>C#</strong> được.</p><h3>2. Tính kế thừa</h3><p>Trong <strong>Javascript</strong> không có từ khóa extends cũng như class, vậy nên <em>Prototype</em> (and <em>Prototype chains</em>) là sự triển khai tính kế thừa đối tượng của <strong>Javascript</strong>.</p><p><strong>Ví dụ:</strong> </p><pre class="language-javascript"><code>function Person() {
+  this.firstName = 'Per';
+  this.lastName = 'son';
+  this.sayName = function() { return this.firstName + ' ' + this.lastName };
+}
+
+// Viết một Constructor Function khác
+function SuperMan(firstName, lastName) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+}
+
+// Ta muốn SuperMan sẽ kế thừa các thuộc tính của Person
+// Sử dụng prototype để kế thừa
+SuperMan.prototype = new Person();
+
+// Tạo một object mới bằng Constructor Function 
+var sm = new SuperMan('Khoa', 'Nguyen');
+sm.sayName(); // Khoa Nguyen. Hàm này kế thừa từ prototype của Person</code></pre><p>Khi trình thông dịch JS kiểm tra thuộc tính đối tượng định nghĩa cho nó, trước tiên nó kiểm kiểm tra object trước. Nếu object không có thuộc tính được định nghĩa, nó sẽ kiểm tra <em>prototype</em> của đối tượng với cùng thuộc tính, nếu nó được tìm thấy, nó sẽ trả về thuộc tính đó. Nó khác với OOP trong Java là prototype object có thể truy cập vào đối tượng tạo ra trước vào sau bất kể khi nào có sự thay đổi nào trên prototype</p><pre class="language-javascript" tabindex="0"><code>function Bread() {}; // constructor function
+let brownBread = new Bread(); // object of type "Bread"
+let sodaBread = new Bread(); // object of type "Bread"
+Bread.prototype.toast = function() {
+        console.log('I am toasting!');
+    }; // set the function on a toast property on the prototype
+// inherited prototype is accessible!
+brownBread.toast(); // I am toasting!
+sodaBread.toast(); // I am toasting!</code></pre><h3>3. Tính đa hình và trừu tượng</h3><p>Đối với tính đa hình và tính trừu tượng, việc áp dụng 2 tính chất này trong Javascript là không rõ ràng. Do đó mình sẽ không trình bày trong bài viết này</p><p>Việc áp dụng lập trình hướng đối tượng vào JavaScript là tương đối khó. Tuy nhiên, nếu bạn nắm vững những kiến thức cơ bản mà mình đã trình bày trên đây, thì mình tin chắc rằng bạn sẽ dễ dàng tìm hiểu thêm và áp dụng lập trình hướng đối tượng trong JavaScript.</p><h3>Tạm kết</h3><p>Như vậy trong bài viết này, chúng ta đã cùng tìm hiểu về <strong>OOP</strong> trong <strong>javascript</strong>. Bạn thấy thế nào về JS, hãy đưa ra những ý kiến trong quá trình sử dụng js nhé.</p></div><aside class="content__aside"><div class="content__share"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftinpham231.github.io%2Fgh-pages%2Foop-trong-javascript-co-gi-khac-voi-ngon-ngu-khac.html" class="js-share facebook" title="Share with Facebook" rel="nofollow noopener noreferrer" aria-label="Share with Facebook"><svg class="u-icon"><use xlink:href="https://tinpham231.github.io/gh-pages/assets/svg/svg-map.svg#facebook"/></svg> </a><a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Ftinpham231.github.io%2Fgh-pages%2Foop-trong-javascript-co-gi-khac-voi-ngon-ngu-khac.html&amp;media=https%3A%2F%2Ftinpham231.github.io%2Fgh-pages%2Fmedia%2Fposts%2F11%2Foop-trong-javascript-63734807042.6106.jpg&amp;description=OOP%20Trong%20Javascript%20C%C3%B3%20G%C3%AC%20Kh%C3%A1c%20V%E1%BB%9Bi%20Ng%C3%B4n%20Ng%E1%BB%AF%20Kh%C3%A1c%3F" class="js-share pinterest" title="Share with Pinterest" rel="nofollow noopener noreferrer" aria-label="Share with Pinterest"><svg class="u-icon"><use xlink:href="https://tinpham231.github.io/gh-pages/assets/svg/svg-map.svg#pinterest"/></svg> </a><a href="https://wa.me/?text=OOP%20Trong%20Javascript%20C%C3%B3%20G%C3%AC%20Kh%C3%A1c%20V%E1%BB%9Bi%20Ng%C3%B4n%20Ng%E1%BB%AF%20Kh%C3%A1c%3F https%3A%2F%2Ftinpham231.github.io%2Fgh-pages%2Foop-trong-javascript-co-gi-khac-voi-ngon-ngu-khac.html" class="js-share whatsapp" rel="nofollow noopener noreferrer" title="Share with WhatsApp" aria-label="Share with WhatsApp"><svg class="u-icon"><use xlink:href="https://tinpham231.github.io/gh-pages/assets/svg/svg-map.svg#whatsapp"/></svg> </a><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Ftinpham231.github.io%2Fgh-pages%2Foop-trong-javascript-co-gi-khac-voi-ngon-ngu-khac.html" class="js-share linkedin" title="Share with LinkedIn" rel="nofollow noopener noreferrer" aria-label="Share with LinkedIn"><svg class="u-icon"><use xlink:href="https://tinpham231.github.io/gh-pages/assets/svg/svg-map.svg#linkedin"/></svg> </a><a href="https://buffer.com/add?text=OOP%20Trong%20Javascript%20C%C3%B3%20G%C3%AC%20Kh%C3%A1c%20V%E1%BB%9Bi%20Ng%C3%B4n%20Ng%E1%BB%AF%20Kh%C3%A1c%3F&amp;url=https%3A%2F%2Ftinpham231.github.io%2Fgh-pages%2Foop-trong-javascript-co-gi-khac-voi-ngon-ngu-khac.html" class="js-share buffer" title="Share with Buffer" rel="nofollow noopener noreferrer" aria-label="Share with Buffer"><svg class="u-icon"><use xlink:href="https://tinpham231.github.io/gh-pages/assets/svg/svg-map.svg#buffer"/></svg></a></div></aside><footer class="content__footer"><div class="content__bio box"><div><h4 class="h6"><a href="https://tinpham231.github.io/gh-pages/authors/pham-ba-tin/" title="Pham Ba Tin">Pham Ba Tin</a></h4></div></div><nav class="content__nav box"><div class="content__nav__prev"><a href="https://tinpham231.github.io/gh-pages/asyncawait-trong-javascript-co-lam-kho-duoc-ban.html" class="content__nav__link" rel="prev"><img src="https://tinpham231.github.io/gh-pages/media/posts/10/responsive/asyncawait-trong-javascript-63741267332.9522-xs.jpg" loading="lazy" alt="" height="460" width="817"><div class="u-small">Previous Post<h5>Async/Await Trong Javascript Có Làm Khó Được Bạn?</h5></div></a></div></nav><div class="content__related box"><h3 class="box__title">Related posts</h3><div class="content__related-wrap"><figure class="content__related-item"><a href="https://tinpham231.github.io/gh-pages/asyncawait-trong-javascript-co-lam-kho-duoc-ban.html" class="c-card__image"><img src="https://tinpham231.github.io/gh-pages/media/posts/10/responsive/asyncawait-trong-javascript-63741267332.9522-xs.jpg" loading="lazy" height="460" width="817" alt=""></a><figcaption><h4 class="content__related-title"><a href="https://tinpham231.github.io/gh-pages/asyncawait-trong-javascript-co-lam-kho-duoc-ban.html" class="inverse">Async/Await Trong Javascript Có Làm Khó Được Bạn?</a></h4><time datetime="2024-12-31T00:25" class="u-small">tháng 12 31, 2024</time></figcaption></figure><figure class="content__related-item"><a href="https://tinpham231.github.io/gh-pages/7-tips-va-tricks-trong-javascript-giup-ban-chuyen-nghiep-hon.html" class="c-card__image"><img src="https://tinpham231.github.io/gh-pages/media/posts/9/responsive/7-meo-va-thu-thuat-trong-javascript-63748636771.74-xs.jpg" loading="lazy" height="468" width="817" alt=""></a><figcaption><h4 class="content__related-title"><a href="https://tinpham231.github.io/gh-pages/7-tips-va-tricks-trong-javascript-giup-ban-chuyen-nghiep-hon.html" class="inverse">7 Tips Và Tricks Trong Javascript Giúp Bạn Chuyên Nghiệp Hơn</a></h4><time datetime="2024-12-31T00:14" class="u-small">tháng 12 31, 2024</time></figcaption></figure><figure class="content__related-item"><a href="https://tinpham231.github.io/gh-pages/lam-quen-voi-dom-document-object-model-trong-javascript.html" class="c-card__image"><img src="https://tinpham231.github.io/gh-pages/media/posts/8/responsive/moi-truong-node-js-browser-va-khac-biet-63745001344.3067-xs.jpg" loading="lazy" height="544" width="817" alt=""></a><figcaption><h4 class="content__related-title"><a href="https://tinpham231.github.io/gh-pages/lam-quen-voi-dom-document-object-model-trong-javascript.html" class="inverse">Môi trường Node Js, Browser và những điểm khác biệt</a></h4><time datetime="2024-12-30T23:53" class="u-small">tháng 12 30, 2024</time></figcaption></figure></div></div></footer></article></main><div class="sidebar"><section class="box featured"><h3 class="box__title">Featured</h3><ul class="featured__container"><li class="featured__item"><a href="https://tinpham231.github.io/gh-pages/java-vs-javascript.html" class="featured__image-link"><img src="https://tinpham231.github.io/gh-pages/media/posts/1/responsive/java-vs-nodejs-xs.png" class="lazyload" loading="lazy" alt="" height="628" width="628"></a><div><a href="https://tinpham231.github.io/gh-pages/java-vs-javascript.html" class="featured__title">Java vs JavaScript</a></div></li></ul></section><section class="box authors"><h3 class="box__title">Authors</h3><ul class="authors__cotainer"><li class="authors__item"><div><a href="https://tinpham231.github.io/gh-pages/authors/pham-ba-tin/" class="authors__title">Pham Ba Tin</a> <span class="u-small">Post: 10</span></div></li></ul></section><section class="newsletter box box--gray"><h3 class="box__title">Newsletter</h3><p class="newsletter__description">Sign up to receive email updates and to hear what's going on with us!</p><form>...</form></section><section class="box"><h3 class="box__title">Tags</h3><ul class="tags"><li><a href="https://tinpham231.github.io/gh-pages/tags/java/">Java</a> <span class="u-small">(5)</span></li><li><a href="https://tinpham231.github.io/gh-pages/tags/javascript/">JavaScript</a> <span class="u-small">(6)</span></li></ul></section></div><footer class="footer"><a class="footer__logo" href="https://tinpham231.github.io/gh-pages/">Tin&#x27;s Blog</a><nav><ul class="footer__nav"></ul></nav><div class="footer__follow"></div><div class="footer__copyright"><p>Powered by Publii</p></div></footer></div><script>window.publiiThemeMenuConfig = {    
+        mobileMenuMode: 'sidebar',
+        animationSpeed: 300,
+        submenuWidth: 'auto',
+        doubleClickTime: 500,
+        mobileMenuExpandableSubmenus: true, 
+        relatedContainerForOverlayMenuSelector: '.navbar',
+   };</script><script defer="defer" src="https://tinpham231.github.io/gh-pages/assets/js/scripts.min.js?v=18a65c58aef57c0287e0f0609f3389a9"></script><script>var images = document.querySelectorAll('img[loading]');
+
+      for (var i = 0; i < images.length; i++) {
+         if (images[i].complete) {
+               images[i].classList.add('is-loaded');
+         } else {
+               images[i].addEventListener('load', function () {
+                  this.classList.add('is-loaded');
+               }, false);
+         }
+      }</script></body></html>
